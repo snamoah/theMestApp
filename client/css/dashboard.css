@@ -1,0 +1,47 @@
+.profile-pic {
+  display: block;
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  height: 10em;
+
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.profile-name {
+  cursor: pointer;
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+
+.profile-name:hover {
+  color: #049fe1;
+}
+
+.profile-dropdown {
+  display: none;
+}
+
+.profile-dropdown {
+  margin: 0;
+  padding: 0;
+}
+
+.profile-dropdown li {
+  text-align: center;
+  list-style-type: none;
+  line-height: 2em;
+}
+
+.profile-dropdown li:hover {
+  background: white;
+  border-radius: 3px;
+  color: #777;
+}
+
+.profile-dropdown:blur {
+  display: none;
+}
