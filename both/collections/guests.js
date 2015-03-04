@@ -10,11 +10,26 @@ Guests.attachSchema(new SimpleSchema({
       rows: 5
     }     
   },
-  year: {
-    type: Number,
-    max: 4
+  date: {
+    type: Date
+  },
+
+  video: {
+    type: String,
+    autoform: {
+      afFieldInput: {
+        type: 'cfs-file',
+        collection: 'Videos'
+      }
+    }
   },
   GuestType: {
-    type: String
+    type: String,
+    autoform: {
+      options: [
+        { label: 'Guest Lectures', value: 'gl' },
+        { label: 'Product Forum', value: 'pf' }
+      ]
+    }
   }
 }));

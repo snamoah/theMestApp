@@ -13,3 +13,9 @@ Router.route('/addGuest', function() {
 }, {
   name: 'addGuest'
 });
+
+Router.route('/dashboard', function() {
+  this.render('dashboard')
+}, {
+  name: 'dashboard'
+})

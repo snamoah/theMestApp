@@ -1,2 +1,5 @@
 <template name="dashboard">
+  {{#each videos}}
+    <video src="{{url download=true}}" controls></video>
+  {{/each}}
 </template>
