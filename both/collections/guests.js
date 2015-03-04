@@ -1,22 +1,20 @@
 Guests = new Mongo.Collection('guests');
 
-Guests.attachSchema( new SimpleSchema({
+Guests.attachSchema(new SimpleSchema({
   name: {
     type: String
   },
-
   bio: {
     type: String,
     autoform: {
       rows: 5
     }     
   },
-
-  date: {
-    type: String
+  year: {
+    type: Number,
+    max: 4
   },
-
-  type: {
+  GuestType: {
     type: String
   }
 }));

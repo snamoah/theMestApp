@@ -7,3 +7,9 @@ Router.route('/', function() {
 }, {
   name: 'main'
 });
+
+Router.route('/addGuest', function() {
+  this.render('postGuestInfo');
+}, {
+  name: 'addGuest'
+});

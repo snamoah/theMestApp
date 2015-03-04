@@ -9,3 +9,5 @@ autopublish
 insecure
 aldeed:autoform
 iron:router
+aldeed:collection2
+mrt:bootstrap-3
