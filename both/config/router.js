@@ -3,19 +3,26 @@ Router.configure({
 })
 
 Router.route('/', function() {
-  this.render('main')
+  this.render('signin');
 }, {
   name: 'main'
 });
 
 Router.route('/addGuest', function() {
-  this.render('postGuestInfo');
+  verifyLogin(this, 'postGuestInfo');
 }, {
   name: 'addGuest'
 });
 
 Router.route('/dashboard', function() {
-  this.render('dashboard')
+  verifyLogin(this, 'dashboard');
 }, {
   name: 'dashboard'
 })
+
+verifyLogin = function(r, template) {
+  if(Meteor.user()) 
+    r.render(template)
+  else
+    Router.go('/');
+}
