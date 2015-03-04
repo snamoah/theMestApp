@@ -14,3 +14,6 @@ mrt:bootstrap-3
 cfs:standard-packages
 cfs:filesystem
 cfs:autoform
+useraccounts:bootstrap
+useraccounts:core
+accounts-password

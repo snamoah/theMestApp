@@ -1,5 +1,32 @@
 <template name="dashboard">
-  {{#each videos}}
-    <video src="{{url download=true}}" controls></video>
-  {{/each}}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <img src="img/avartar.png" class="img-responsive profile-pic">
+
+              <p class="text-center profile-name">Samuel Amoah <i class="fa fa-caret-down"></i></p>
+              <ul class="profile-dropdown" id="profileDropdown">
+                <li><a href="">Sign out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <h3>Today, we are having <span class="em">banku and okro soup</span> or <span class="em">fries</span> for lunch and <span class="em">rice</span> for supper.</h3>
+            </div>
+            <div class="col-md-7">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
+
