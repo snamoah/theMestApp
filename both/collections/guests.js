@@ -20,3 +20,5 @@ Guests.attachSchema( new SimpleSchema({
     type: String
   }
 }));
+
+

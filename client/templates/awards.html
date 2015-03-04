@@ -1,0 +1,19 @@
+<template name="awards">
+  <h1>Awards</h1>
+  {{>insertAwardForm}}
+
+</template>
+
+<template name="insertAwardForm">
+  {{#autoForm collection="Books" id="insertBookForm" type="insert"}}
+  <fieldset>
+    <legend>Add a Book</legend>
+    {{> afQuickField name='title' placeholder='what is the name of the award?'}}
+    {{> afQuickField name='awardee' placeholder='who won the award?'}}
+    {{> afQuickField name='summary' rows=6 placeholder='Describe the award'}}
+    {{> afQuickField name='file'}}
+    {{> afQuickField name='location' placeholder='where was the award?'}}
+  </fieldset>
+  <button type="submit" id="awardBtn" class="btn btn-primary">Insert</button>
+  {{/autoForm}}
+</template>

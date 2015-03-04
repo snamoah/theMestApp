@@ -3,7 +3,12 @@ Router.configure({
 })
 
 Router.route('/', function() {
-  this.render('main')
+  this.render('landingPage')
 }, {
-  name: 'main'
+  name: 'landingPage'
+});
+Router.route('/awards', function() {
+  this.render('awards')
+}, {
+  name: 'awards'
 });
