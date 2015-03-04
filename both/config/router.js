@@ -7,6 +7,11 @@ Router.route('/', function() {
 }, {
   name: 'landingPage'
 });
+Router.route('/addAwards', function() {
+  this.render('addAwards')
+}, {
+  name: 'addAwards'
+});
 Router.route('/awards', function() {
   this.render('awards')
 }, {

@@ -21,7 +21,7 @@ Awards.attachSchema(new SimpleSchema({
     }
   },
 
-  file: {
+  picture: {
     type: String,
     autoform: {
       afFieldInput: {
@@ -31,15 +31,21 @@ Awards.attachSchema(new SimpleSchema({
     },
     label: 'Choose file'
   },
+  
+  location: {
+    type: String,
+    label: 'location',
+    optional: true,
+  },
   owner: {
     type: String,
     autoform: {
       omit: true
     },
-    autoValue: function() {
-      if (this.isInsert) {
-        return Meteor.userId();
-      }
-    }
+    // autoValue: function() {
+    //   if (this.isInsert) {
+    //     return Meteor.userId();
+    //   }
+    // }
   }
 }));
