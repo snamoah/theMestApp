@@ -146,12 +146,23 @@
     transform: rotate(90deg);
 }
 
-.portfolio-modal .modal-backdrop {
+.modal-backdrop {
     display: none;
     opacity: 0;
 }
-element.style {
+.portfolio-modal .modal-content p {
+    margin-bottom: 2px; 
+}
+
+.modal-backdrop.fade.in {
+    z-index: 1;
+}
+.portfolio-item{
+    margin-bottom: 50px;
 }
 .portfolio-modal .modal-content p {
     margin-bottom: 2px; 
+}
+.custom{
+    margin-bottom: 30px;
 }
