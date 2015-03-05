@@ -12,7 +12,7 @@ iron:router
 aldeed:simple-schema
 aldeed:collection2
 twbs:bootstrap
-cfs:gridfs
-cfs:standard-packages
-cfs:ui
 yogiben:autoform-file
+cfs:standard-packages
+cfs:gridfs
+cfs:ui

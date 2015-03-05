@@ -8,7 +8,7 @@ Awards.attachSchema(new SimpleSchema({
   },
   awardee: {
     type: String,
-    label: 'Brief summary',
+    label: 'Awardee',
   },
 
   summary: {
@@ -31,21 +31,11 @@ Awards.attachSchema(new SimpleSchema({
     },
     label: 'Choose file'
   },
-  
+
   location: {
     type: String,
     label: 'location',
     optional: true,
-  },
-  owner: {
-    type: String,
-    autoform: {
-      omit: true
-    },
-    // autoValue: function() {
-    //   if (this.isInsert) {
-    //     return Meteor.userId();
-    //   }
-    // }
   }
+
 }));
