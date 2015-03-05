@@ -8,3 +8,11 @@ AutoForm.hooks({
 
   }
 });
+
+
+Template.awards.helpers({
+  'images':function(){
+    return Images.find().fetch()
+  }
+});
+

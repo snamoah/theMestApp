@@ -15,5 +15,11 @@ Router.route('/addAwards', function() {
 Router.route('/awards', function() {
   this.render('awards')
 }, {
-  name: 'awards'
+  name: 'awards',
+  data: function(){
+
+    return {
+      awards: Awards.find().fetch()
+    }
+  }
 });
